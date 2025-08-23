@@ -1,0 +1,37 @@
+{
+  "name": "tokenizacion",
+  "version": "1.0.0",
+  "description": "Proyecto Hardhat para el token Salta Mining Token (SMT)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf artifacts cache",
+    "compile": "hardhat compile",
+    "deploy:bsctestnet": "hardhat run scripts/deploy.js --network bsctestnet",
+    "deploy:bsc": "hardhat run scripts/deploy.js --network bsc",
+    "deploy:arbSepolia": "hardhat run scripts/deploy.js --network arbitrumSepolia",
+    "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum",
+    "verify:bsctestnet": "hardhat verify --network bsctestnet",
+    "verify:bsc": "hardhat verify --network bsc",
+    "verify:arbSepolia": "hardhat verify --network arbitrumSepolia",
+    "verify:arbitrum": "hardhat verify --network arbitrum"
+  },
+  "keywords": [
+    "hardhat",
+    "erc20",
+    "openzeppelin",
+    "bsc",
+    "arbitrum",
+    "token"
+  ],
+  "author": "leonardoprimero",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.26.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
