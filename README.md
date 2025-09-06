@@ -111,7 +111,7 @@ npm run deploy:bsctestnet
 
 ---
 
-## 🔍 Explorers. (optional)
+## 🔍 Explorers (optional)
 
 Verify the contract on BscScan Testnet:
 
